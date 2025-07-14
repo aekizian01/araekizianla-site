@@ -1,65 +1,35 @@
-</script>
-<header>
-  <h1>Ara Ekizian LA</h1>
-  <nav>
-    <ul>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<link rel="stylesheet" href="style.css" />
-<main>
-  <section id="hero">
-  </section>
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="grid">
-    <div class="card">
-    <a href="evidence-locker-weekender.html">
-  <img src="bag-front.jpeg" alt="Evidence Locker" class="product-thumb">
-</a>
-        <p>Evidence Locker </p>
-      </a>
-    </div>
-  </div>
-</section>
-      <p>Evidence Locker Weekender</p>
-      <div class="alt-views hidden">
-        <div class="bag-img-container">
-          <img src="bag-front.jpeg" alt="Front View">
-        </div>
-        <div class="bag-img-container">
-          <img src="bag-back.jpeg" alt="Back View">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </div>
-</div>
-  </section>
-	
-  <section id="shop">
-    <h2>Shop</h2>
-    <div class="grid">
-      <!-- products go here -->
-      <div class="card">Product 1</div>
-      <div class="card">Product 2</div>
-      <div class="card">Product 3</div>
-    </div>
-  </section>
-</main>
-<script>
-  function revealImages(wrapper) {
-    const mainImg = wrapper.querySelector('.main-img');
-    const altViews = wrapper.querySelector('.alt-views');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ara Ekizian LA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    mainImg.style.display = 'none';
-    altViews.classList.remove('hidden');
-  }
-</script>
+  <header>
+    <h1>Ara Ekizian LA</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+
+      <div class="product">
+        <a href="evidence-locker-weekender.html">
+          <img src="bag-front.jpeg" alt="Evidence Locker Weekender" class="product-thumb">
+          <p>Evidence Locker Weekender</p>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
 </body>
 </html>
