@@ -109,3 +109,8 @@ section {
   gap: 16px;
   justify-content: center;
 }
+.alt-views img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 4px;
+}
