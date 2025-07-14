@@ -1,42 +1,31 @@
-<header>
-  <h1>Ara Ekizian LA</h1>
-  <nav>
-    <ul>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<link rel="stylesheet" href="style.css" />
-<main>
-  <section id="hero">
-    <h2>Welcome</h2>
-    <p>This is where I show off and sell things.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-  <div class="grid">
-  <div class="card">
-    <img src="bag-front.jpeg" alt="Evidence Locker Weekender Front">
-    <p>Evidence Locker Weekender Front</p>
-  </div>
-  <div class="card">
-    <img src="bag-back.jpeg" alt="Evidence Locker Weekender Back">
-    <p>Evidence Locker Weekender Back</p>
-  </div>
-</div>
-  </section>
-	
-  <section id="shop">
-    <h2>Shop</h2>
-    <div class="grid">
-      <!-- products go here -->
-      <div class="card">Product 1</div>
-      <div class="card">Product 2</div>
-      <div class="card">Product 3</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Bag Reveal</title>
+  <style>
+    .hidden { display: none; }
+    .bag-wrapper { cursor: pointer; text-align: center; margin: 40px; }
+    .alt-views { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+    .alt-views img { max-width: 45%; }
+  </style>
+</head>
+<body>
+  <div class="bag-wrapper" onclick="revealImages(this)">
+    <img class="main-img" src="bag-front.jpeg" alt="Front">
+    <div class="alt-views hidden">
+      <img src="bag-front.jpeg" alt="Front View">
+      <img src="bag-back.jpeg" alt="Back View">
     </div>
-  </section>
-</main>
+  </div>
 
+  <script>
+    function revealImages(wrapper) {
+      const mainImg = wrapper.querySelector('.main-img');
+      const altViews = wrapper.querySelector('.alt-views');
+      mainImg.style.display = 'none';
+      altViews.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
